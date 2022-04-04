@@ -47,7 +47,7 @@ const MenuBar = () => {
             <Link
               variant="button"
               color="text.primary"
-              to="/page/about"
+              to="/about"
               sx={{ my: 1, mx: 1.5, textDecoration: "none" }}
             >
               About
