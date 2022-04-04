@@ -33,9 +33,9 @@ const MenuBar = () => {
             }}
           >
             <Link
+              to="/"
               variant="button"
               color="text.primary"
-              to="/"
               sx={{
                 my: 1,
                 mx: 1.5,
