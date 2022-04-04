@@ -14,10 +14,11 @@ import theme from "./styles/theme";
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <div className="App">
-        <NavBar />
-        <MenuBar />
-        <Router>
+      <Router>
+        <div className="App">
+          <NavBar />
+          <MenuBar />
+
           <div>
             <Routes>
               <Route exact path="/" element={<Home />} />
@@ -26,9 +27,10 @@ function App() {
               <Route exact path="/contact" element={<Contact />} />
             </Routes>
           </div>
-        </Router>
-        <Footer />
-      </div>
+
+          <Footer />
+        </div>
+      </Router>
     </ThemeProvider>
   );
 }
