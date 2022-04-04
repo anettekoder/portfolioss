@@ -35,7 +35,7 @@ const MenuBar = () => {
             <Link
               variant="button"
               color="text.primary"
-              href="/"
+              to="/"
               sx={{
                 my: 1,
                 mx: 1.5,
@@ -47,7 +47,7 @@ const MenuBar = () => {
             <Link
               variant="button"
               color="text.primary"
-              to="/about"
+              to="/page/about"
               sx={{ my: 1, mx: 1.5, textDecoration: "none" }}
             >
               About
