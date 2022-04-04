@@ -4,7 +4,7 @@ import Box from "@mui/material/Box";
 import logo from "../images/Logo-Anette.png";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import Link from "@mui/material/Link";
+import { Link } from "react-router-dom";
 
 const MenuBar = () => {
   return (
