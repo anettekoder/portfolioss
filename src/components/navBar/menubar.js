@@ -4,7 +4,7 @@ import Box from "@mui/material/Box";
 import logo from "../images/Logo-Anette.png";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import { Link } from "react-router-dom";
+import Link from "@mui/material/Link";
 
 const MenuBar = () => {
   return (
@@ -33,7 +33,7 @@ const MenuBar = () => {
             }}
           >
             <Link
-              to="/"
+              href="/"
               variant="button"
               color="text.primary"
               sx={{
@@ -47,7 +47,7 @@ const MenuBar = () => {
             <Link
               variant="button"
               color="text.primary"
-              to="/about"
+              href="/about"
               sx={{ my: 1, mx: 1.5, textDecoration: "none" }}
             >
               About
@@ -55,7 +55,7 @@ const MenuBar = () => {
             <Link
               variant="button"
               color="text.primary"
-              to="/projects"
+              href="/projects"
               sx={{ my: 1, mx: 1.5, textDecoration: "none" }}
             >
               Projects
@@ -63,7 +63,7 @@ const MenuBar = () => {
             <Link
               variant="button"
               color="text.primary"
-              to="/contact"
+              href="/contact"
               sx={{ my: 1, mx: 1.5, textDecoration: "none" }}
             >
               Contact
