@@ -47,7 +47,7 @@ const MenuBar = () => {
             <Link
               variant="button"
               color="text.primary"
-              href="/about"
+              href="./././pages/about"
               sx={{ my: 1, mx: 1.5, textDecoration: "none" }}
             >
               About
