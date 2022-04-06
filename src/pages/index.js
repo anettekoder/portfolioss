@@ -10,7 +10,7 @@ import { Link, useNavigate } from "react-router-dom";
 const Item = styled(Paper)(() => ({
   borderRadius: "none",
   boxShadow: "none",
-  boxSizing: "border-box"
+  boxSizing: "border-box",
 }));
 
 function Home() {
@@ -35,53 +35,94 @@ function Home() {
         </Grid>
       </Grid>
 
-      <Grid container justify="center" spacing={1} style={{ marginTop: "10rem" }}>
+      <Grid
+        container
+        justify="center"
+        spacing={1}
+        style={{ marginTop: "10rem" }}
+      >
         <Grid item xs={12} md={6}>
           <Item
             style={{
               backgroundColor: "rgba(0, 128, 129, 0.3)",
               borderRadius: "0",
               height: "550px",
-              width: "auto"
+              width: "auto",
             }}
           >
             <div style={{ margin: "0 3rem 0 3rem" }}>
-              <Typography variant="h3" align="left" style={{ padding: "30px 0" }}>
+              <Typography
+                variant="h3"
+                align="left"
+                style={{ padding: "30px 0" }}
+              >
                 SKILLS ||
               </Typography>
-              <Typography variant="body1" align="left" style={{ marginBottom: "1rem" }}>
+              <Typography
+                variant="body1"
+                align="left"
+                style={{ marginBottom: "1rem" }}
+              >
                 HTML
               </Typography>
               <Divider />
 
-              <Typography variant="body1" align="left" style={{ marginBottom: "1rem" }}>
+              <Typography
+                variant="body1"
+                align="left"
+                style={{ marginBottom: "1rem" }}
+              >
                 CSS/SCSS/SASS
               </Typography>
               <Divider />
 
-              <Typography variant="body1" align="left" style={{ marginBottom: "1rem" }}>
+              <Typography
+                variant="body1"
+                align="left"
+                style={{ marginBottom: "1rem" }}
+              >
                 Java Script
               </Typography>
               <Divider />
-              <Typography variant="body1" align="left" style={{ marginBottom: "1rem" }}>
+              <Typography
+                variant="body1"
+                align="left"
+                style={{ marginBottom: "1rem" }}
+              >
                 Bootstrap
               </Typography>
               <Divider />
-              <Typography variant="body1" align="left" style={{ marginBottom: "1rem" }}>
+              <Typography
+                variant="body1"
+                align="left"
+                style={{ marginBottom: "1rem" }}
+              >
                 React
               </Typography>
               <Divider />
-              <Typography variant="body1" align="left" style={{ marginBottom: "1rem" }}>
+              <Typography
+                variant="body1"
+                align="left"
+                style={{ marginBottom: "1rem" }}
+              >
                 Material UI
               </Typography>
               <Divider />
-              <Typography variant="body1" align="left" style={{ marginBottom: "1rem" }}>
+              <Typography
+                variant="body1"
+                align="left"
+                style={{ marginBottom: "1rem" }}
+              >
                 UX Design
               </Typography>
               <Divider />
-              <Typography variant="h3" align="left" style={{ padding: "1rem 3rem" }}>
-                Feel free to contact me for a non-binding conversation to find out if we are a good
-                match.
+              <Typography
+                variant="h3"
+                align="left"
+                style={{ padding: "1rem 3rem" }}
+              >
+                Feel free to contact me for a non-binding conversation to find
+                out if we are a good match.
                 <br />
               </Typography>
             </div>
@@ -108,7 +149,7 @@ function Home() {
                       justifyContent: "center",
                       bottom: "0",
                       left: "50%",
-                      transform: "translateX(-50%)"
+                      transform: "translateX(-50%)",
                     }}
                   >
                     {" "}
