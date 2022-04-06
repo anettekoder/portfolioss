@@ -5,15 +5,16 @@ import Paper from "@mui/material/Paper";
 import { styled } from "@mui/material/styles";
 import CardMedia from "@mui/material/CardMedia";
 import image1 from "../components/images/landscape1.jpg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Item = styled(Paper)(() => ({
   borderRadius: "none",
   boxShadow: "none",
-  borderBox: "boxZize",
+  boxSizing: "border-box"
 }));
 
 function Home() {
+  const navigate = useNavigate();
   return (
     <div>
       <Grid container justify="center" spacing={2}>
@@ -25,7 +26,7 @@ function Home() {
             <Typography variant="h2">and I am a Front End Developer</Typography>
             <PrimaryButton
               variant="contained"
-              href="/contact"
+              onClick={() => navigate("/contact")}
               sx={{ marginTop: "2rem" }}
             >
               Contact me
@@ -34,95 +35,56 @@ function Home() {
         </Grid>
       </Grid>
 
-      <Grid
-        container
-        justify="center"
-        spacing={1}
-        style={{ marginTop: "10rem" }}
-      >
+      <Grid container justify="center" spacing={1} style={{ marginTop: "10rem" }}>
         <Grid item xs={12} md={6}>
           <Item
             style={{
               backgroundColor: "rgba(0, 128, 129, 0.3)",
               borderRadius: "0",
               height: "550px",
-              width: "auto",
+              width: "auto"
             }}
           >
-            <Typography
-              variant="h3"
-              align="left"
-              style={{ marginLeft: "3rem", padding: "30px 0" }}
-            >
-              SKILLS ||
-            </Typography>
-            <Typography
-              variant="body1"
-              align="left"
-              style={{ marginLeft: "3rem", marginBottom: "1rem" }}
-            >
-              HTML
+            <div style={{ margin: "0 3rem 0 3rem" }}>
+              <Typography variant="h3" align="left" style={{ padding: "30px 0" }}>
+                SKILLS ||
+              </Typography>
+              <Typography variant="body1" align="left" style={{ marginBottom: "1rem" }}>
+                HTML
+              </Typography>
               <Divider />
-            </Typography>
 
-            <Typography
-              variant="body1"
-              align="left"
-              style={{ marginLeft: "3rem", marginBottom: "1rem" }}
-            >
-              CSS/SCSS/SASS
+              <Typography variant="body1" align="left" style={{ marginBottom: "1rem" }}>
+                CSS/SCSS/SASS
+              </Typography>
               <Divider />
-            </Typography>
 
-            <Typography
-              variant="body1"
-              align="left"
-              style={{ marginLeft: "3rem", marginBottom: "1rem" }}
-            >
-              Java Script
+              <Typography variant="body1" align="left" style={{ marginBottom: "1rem" }}>
+                Java Script
+              </Typography>
               <Divider />
-            </Typography>
-            <Typography
-              variant="body1"
-              align="left"
-              style={{ marginLeft: "3rem", marginBottom: "1rem" }}
-            >
-              Bootstrap
+              <Typography variant="body1" align="left" style={{ marginBottom: "1rem" }}>
+                Bootstrap
+              </Typography>
               <Divider />
-            </Typography>
-            <Typography
-              variant="body1"
-              align="left"
-              style={{ marginLeft: "3rem", marginBottom: "1rem" }}
-            >
-              React
+              <Typography variant="body1" align="left" style={{ marginBottom: "1rem" }}>
+                React
+              </Typography>
               <Divider />
-            </Typography>
-            <Typography
-              variant="body1"
-              align="left"
-              style={{ marginLeft: "3rem", marginBottom: "1rem" }}
-            >
-              Material UI
+              <Typography variant="body1" align="left" style={{ marginBottom: "1rem" }}>
+                Material UI
+              </Typography>
               <Divider />
-            </Typography>
-            <Typography
-              variant="body1"
-              align="left"
-              style={{ marginLeft: "3rem", marginBottom: "1rem" }}
-            >
-              UX Design
+              <Typography variant="body1" align="left" style={{ marginBottom: "1rem" }}>
+                UX Design
+              </Typography>
               <Divider />
-            </Typography>
-            <Typography
-              variant="h3"
-              align="left"
-              style={{ padding: "1rem 3rem" }}
-            >
-              Feel free to contact me for a non-binding conversation to find out
-              if we are a good match.
-              <br />
-            </Typography>
+              <Typography variant="h3" align="left" style={{ padding: "1rem 3rem" }}>
+                Feel free to contact me for a non-binding conversation to find out if we are a good
+                match.
+                <br />
+              </Typography>
+            </div>
           </Item>
         </Grid>
         <Grid item xs={12} md={6}>
@@ -146,7 +108,7 @@ function Home() {
                       justifyContent: "center",
                       bottom: "0",
                       left: "50%",
-                      transform: "translateX(-50%)",
+                      transform: "translateX(-50%)"
                     }}
                   >
                     {" "}

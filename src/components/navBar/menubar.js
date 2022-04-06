@@ -27,13 +27,10 @@ const MenuBar = () => {
         style={{
           background: "none",
           card: "none",
-          boxShadow: "none",
+          boxShadow: "none"
         }}
       >
-        <Toolbar
-          disableGutters
-          style={{ display: "flex", flexDirection: "column" }}
-        >
+        <Toolbar disableGutters style={{ display: "flex", flexDirection: "column" }}>
           <Typography noWrap sx={{ flexGrow: 1, display: { xs: "flex" } }}>
             <Link to="/">
               <img src={logo} alt="logo" style={{ width: "350px" }} />{" "}
@@ -42,7 +39,7 @@ const MenuBar = () => {
           <Box
             sx={{
               flexGrow: 2,
-              paddingBottom: "5rem",
+              paddingBottom: "5rem"
             }}
           >
             <StyledLink
@@ -52,11 +49,12 @@ const MenuBar = () => {
               sx={{
                 my: 1,
                 mx: 1.5,
-                textDecoration: "none",
+                textDecoration: "none"
               }}
             >
               Home
             </StyledLink>
+<<<<<<< HEAD
             <StyledLink
               variant="button"
               color="text.primary"
@@ -76,6 +74,13 @@ const MenuBar = () => {
             <StyledLink
               variant="button"
               color="text.primary"
+=======
+            <StyledLink to="/about">About</StyledLink>
+            <StyledLink to="/projects">Projects</StyledLink>
+            <StyledLink
+              variant="button"
+              color="text.primary"
+>>>>>>> 5c9b48e21c15e7590e52e45365d84da0a2719eb2
               to="/contact"
               sx={{ my: 1, mx: 1.5, textDecoration: "none" }}
             >
