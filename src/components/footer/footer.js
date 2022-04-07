@@ -4,6 +4,19 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { Link } from "react-router-dom";
+import styled from "@emotion/styled";
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  margin: 1.5rem 0.75rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.87);
+`;
 
 function Copyright() {
   return (
@@ -38,7 +51,7 @@ const Footer = () => {
         }}
       >
         <Container maxWidth="sm">
-          <Link
+          <StyledLink
             variant="button"
             color="text.primary"
             to="/"
@@ -52,7 +65,7 @@ const Footer = () => {
             }}
           >
             Home
-          </Link>
+          </StyledLink>
           <Link
             variant="button"
             color="text.primary"
