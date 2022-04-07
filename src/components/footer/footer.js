@@ -66,7 +66,7 @@ const Footer = () => {
           >
             Home
           </StyledLink>
-          <Link
+          <StyledLink
             variant="button"
             color="text.primary"
             to="/about"
@@ -80,8 +80,8 @@ const Footer = () => {
             }}
           >
             About
-          </Link>
-          <Link
+          </StyledLink>
+          <StyledLink
             variant="button"
             color="text.primary"
             to="/projects"
@@ -95,8 +95,8 @@ const Footer = () => {
             }}
           >
             Projects
-          </Link>
-          <Link
+          </StyledLink>
+          <StyledLink
             variant="button"
             color="text.primary"
             to="/contact"
@@ -110,7 +110,7 @@ const Footer = () => {
             }}
           >
             Contact
-          </Link>
+          </StyledLink>
         </Container>
         <Copyright />
       </Box>
