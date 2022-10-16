@@ -13,6 +13,7 @@ import homedecoreImg from "../components/images/interior.jpg";
 import campingImg from "../components/images/camping.jpg";
 import CardMedia from "@mui/material/CardMedia";
 // import { Link } from "react-router-dom";
+import ProjectCard from "../components/projectCards";
 
 const Item = styled(Paper)(() => ({
   borderRadius: "none",
@@ -23,11 +24,12 @@ const Item = styled(Paper)(() => ({
 function Projects() {
   return (
     <div>
+      <ProjectCard />
       <Grid container justify="center" spacing={5}>
         <Grid item xs={12} style={{ marginBottom: "30px" }}>
           <Item>
             <Typography variant="h1" gutterBottom style={{ fontSize: "30px" }}>
-              My Projects
+              Other Projects
             </Typography>
             <Divider />
           </Item>

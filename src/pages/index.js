@@ -6,6 +6,7 @@ import { styled } from "@mui/material/styles";
 import CardMedia from "@mui/material/CardMedia";
 import image1 from "../components/images/landscape1.jpg";
 import { Link, useNavigate } from "react-router-dom";
+// import ProjectCards from "../components/projectCards";
 
 const Item = styled(Paper)(() => ({
   borderRadius: "none",
@@ -34,7 +35,7 @@ function Home() {
           </Item>
         </Grid>
       </Grid>
-
+      {/* <ProjectCards /> */}
       <Grid
         container
         justify="center"
